@@ -1,0 +1,5 @@
+{
+  "name": "Architecture Portfolio",
+  "description": "A modern, minimal, and performant web application for an architecture company to showcase their portfolio, built with React, TypeScript, and Tailwind CSS.",
+  "requestFramePermissions": []
+}
