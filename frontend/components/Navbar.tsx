@@ -4,7 +4,7 @@ import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import { NavLink, useLocation } from 'react-router-dom';
 import InstagramIcon from './icons/InstagramIcon';
 import LinkedInIcon from './icons/LinkedInIcon';
-
+// import logo from '../assets/brep-with-logo-bgr.png';
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -39,7 +39,8 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <NavLink to="/" className="text-xl font-bold tracking-wider">
-          STUDIO
+          {/* <img src={logo} alt="Logo" className="h-12"/> */}
+          BREP
         </NavLink>
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
