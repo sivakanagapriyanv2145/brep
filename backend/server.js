@@ -7,11 +7,17 @@ const nodemailer = require("nodemailer");
 const app = express();
 
 // Middleware
-app.use(cors({
-  // origin: ["http://localhost:5173", "https://res.cloudinary.com","https://brep-arch.netlify.app/"], // Allow frontend dev server
-  origin:["*"],
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: "*", // Replace with your frontend URL
+    credentials: true,
+  })
+);
+// cors({
+//   // origin: ["http://localhost:5173", "https://res.cloudinary.com","https://brep-arch.netlify.app/"], // Allow frontend dev server
+//   origin:["*"],
+//   credentials: true,
+// })
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
