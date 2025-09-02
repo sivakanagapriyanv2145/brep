@@ -3,12 +3,12 @@ require("dotenv").config();
 const cors = require("cors");
 const connectDB = require("./config/db");
 const mainRouter = require("./routes");
-
+const nodemailer = require("nodemailer");
 const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["http://localhost:5173", "https://res.cloudinary.com"], // Allow frontend dev server
+  origin: ["http://localhost:5173", "https://res.cloudinary.com","https://brep-arch.netlify.app/"], // Allow frontend dev server
   credentials: true,
 }));
 app.use(express.json());

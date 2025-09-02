@@ -65,7 +65,7 @@ This project is a complete full-stack MERN application for an architecture portf
 4.  **Frontend Environment Setup**:
     - Navigate to the `/frontend` directory.
     - Create a `.env` file by copying `.env.example`.
-    - Ensure `VITE_API_BASE_URL` points to your backend server (default is `http://localhost:5000/api`).
+    - Ensure `VITE_API_BASE_URL` points to your backend server (default is `https://brep-smoky.vercel.app/api`).
 
 5.  **Run the application**:
     From the root directory, run:
