@@ -11,7 +11,6 @@ const categories: (Category | 'all')[] = ['all', 'residential', 'commercial', 'h
 
 const ProjectsPage: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const location = useLocation();
   
   const queryParams = new URLSearchParams(location.search);
@@ -43,8 +42,7 @@ const ProjectsPage: React.FC = () => {
         selectedCategory={selectedCategory}
         onSelectCategory={setSelectedCategory}
       />
-      <ProjectGrid projects={filteredProjects} onProjectClick={setSelectedProject} />
-      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+  <ProjectGrid projects={filteredProjects} />
     </div>
   );
 };

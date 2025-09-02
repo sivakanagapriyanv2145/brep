@@ -9,7 +9,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import { Toaster } from 'react-hot-toast';
-
+import ProjectDetailPage from './pages/ProjectDetailPage';
 // Admin Imports
 import { AuthProvider } from './src/contexts/AuthContext';
 import AdminLoginPage from './src/admin/pages/AdminLoginPage';
@@ -20,7 +20,6 @@ import AdminProjectsListPage from './src/admin/pages/AdminProjectsListPage';
 import AdminProjectFormPage from './src/admin/pages/AdminProjectFormPage';
 import AdminManagementPage from './src/admin/pages/AdminManagementPage';
 import AdminProfilePage from './src/admin/pages/AdminProfilePage';
-import ProjectDetailPage from './src/admin/pages/ProjectDetailPage';
 
 const App: React.FC = () => {
   return (
@@ -58,9 +57,9 @@ const Main: React.FC = () => {
           {/* Public Routes */}
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:id" element={<ProjectDetailPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-
           {/* Admin Routes */}
           <Route path="/admin/login" element={<AdminLoginPage />} />
           
